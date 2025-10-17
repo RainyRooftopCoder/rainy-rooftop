@@ -7,10 +7,10 @@ interface HeroProps {
 }
 
 const Hero = ({ data }: HeroProps) => {
-    const scrollToNext = () => {
-        const skillsSection = document.getElementById('skills');
-        skillsSection?.scrollIntoView({ behavior: 'smooth' });
-    };
+    // const scrollToNext = () => {
+    //     const skillsSection = document.getElementById('skills');
+    //     skillsSection?.scrollIntoView({ behavior: 'smooth' });
+    // };
 
     return (
         <section

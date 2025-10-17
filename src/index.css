@@ -33,10 +33,13 @@ body {
     min-width: 320px;
     min-height: 100vh;
     overflow-x: hidden;
+    width: 100%;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 a {
@@ -95,13 +98,17 @@ button {
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: cover;
+    background-color: #000000;
+    background-size: 2000px auto;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     color: var(--color-white);
+    overflow: hidden;
 }
 
 .hero-overlay {
@@ -706,6 +713,18 @@ button {
 }
 
 /* Responsive */
+@media (max-width: 2000px) {
+    .hero-section {
+        background-size: 1500px auto;
+    }
+}
+
+@media (max-width: 1500px) {
+    .hero-section {
+        background-size: 100% auto;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-name-section {
         flex-direction: column;
