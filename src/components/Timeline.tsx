@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import './Timeline.css';
 
 interface TimelineEvent {
@@ -43,10 +42,8 @@ const timelineData: TimelineEvent[] = [
 ];
 
 const Timeline = () => {
-    const [hoveredId, setHoveredId] = useState<string | null>(null);
-
     return (
-        <section id="timeline" className="section timeline-section">
+        <section id="career" className="section timeline-section">
             <div className="container">
                 <motion.h2
                     className="section-title"
@@ -55,7 +52,7 @@ const Timeline = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    타임라인
+                    이력
                 </motion.h2>
 
                 <div className="timeline-container">
@@ -63,37 +60,22 @@ const Timeline = () => {
                         <div className="timeline-line"></div>
 
                         {timelineData.map((event, index) => (
-                        <motion.div
-                            key={event.id}
-                            className="timeline-item"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            onMouseEnter={() => setHoveredId(event.id)}
-                            onMouseLeave={() => setHoveredId(null)}
-                        >
-                            <div className="timeline-dot"></div>
-                            <div className="timeline-content">
-                                <div className="timeline-year">{event.year}</div>
-                                <div className="timeline-title">{event.title}</div>
-                                <div className="timeline-subtitle">{event.subtitle}</div>
-
-                                {hoveredId === event.id && (
-                                    <motion.div
-                                        className="timeline-tooltip"
-                                        initial={{ opacity: 0, y: -10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0 }}
-                                        transition={{ duration: 0.2 }}
-                                    >
-                                        {event.details.split('\n').map((line, i) => (
-                                            <div key={i}>{line}</div>
-                                        ))}
-                                    </motion.div>
-                                )}
-                            </div>
-                        </motion.div>
+                            <motion.div
+                                key={event.id}
+                                className="timeline-item"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                            >
+                                <div className="timeline-dot"></div>
+                                <div className="timeline-content">
+                                    <div className="timeline-year">{event.year}</div>
+                                    <div className="timeline-title">{event.title}</div>
+                                    <div className="timeline-subtitle">{event.subtitle}</div>
+                                    <div className="timeline-details">{event.details}</div>
+                                </div>
+                            </motion.div>
                         ))}
                     </div>
                 </div>

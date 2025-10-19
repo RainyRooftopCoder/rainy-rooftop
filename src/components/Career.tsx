@@ -32,7 +32,7 @@ const Career = ({ data }: CareerProps) => {
     };
 
     return (
-        <section id="career" className="section career-section">
+        <section id="" className="section career-section">
             <div className="container">
                 <motion.h2
                     className="section-title"
@@ -41,7 +41,7 @@ const Career = ({ data }: CareerProps) => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    이력 / 프로젝트
+                    프로젝트
                 </motion.h2>
 
                 <motion.div

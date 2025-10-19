@@ -42,6 +42,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     width: 100%;
+    scroll-padding-top: 2rem;
 }
 
 a {

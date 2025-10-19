@@ -49,7 +49,6 @@
     display: inline-block;
     width: 25%;
     text-align: center;
-    cursor: pointer;
 }
 
 .timeline-dot {
@@ -61,12 +60,6 @@
     margin: 0 auto 1rem;
     z-index: 2;
     box-shadow: 0 0 0 4px #ffffff, 0 0 20px rgba(0, 112, 74, 0.5);
-    transition: all 0.3s ease;
-}
-
-.timeline-item:hover .timeline-dot {
-    transform: scale(1.3);
-    box-shadow: 0 0 0 6px #ffffff, 0 0 30px rgba(0, 112, 74, 0.8);
 }
 
 .timeline-content {
@@ -91,6 +84,12 @@
 .timeline-subtitle {
     font-size: 0.875rem;
     color: #666666;
+}
+
+.timeline-details {
+    font-size: 0.8rem;
+    color: #888888;
+    margin-top: 0.5rem;
 }
 
 .timeline-tooltip {
