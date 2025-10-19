@@ -15,9 +15,9 @@ const Certifications = ({ data }: CertificationsProps) => {
   });
 
   const itemVariants = {
-    hidden: { opacity: 0, x: 300 },
+    hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: -300 },
+    exit: { opacity: 0, x: -50 },
   };
 
   return (
