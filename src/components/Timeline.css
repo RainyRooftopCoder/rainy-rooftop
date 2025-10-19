@@ -6,7 +6,7 @@
 .timeline-container {
     position: relative;
     max-width: 1200px;
-    margin: 3rem auto;
+    margin-top: 3rem;
     padding: 2rem 0;
     overflow-x: auto;
     overflow-y: hidden;
