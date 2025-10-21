@@ -5,6 +5,7 @@ import Certifications from './components/Certifications';
 import Timeline from './components/Timeline';
 import Career from './components/Career';
 import SideProjects from './components/SideProjects';
+import ScrollToTopButton from './components/ScrollToTopButton';
 import { personalInfo, skills, certifications, projects, sideProjects } from './data/portfolioData';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Timeline />
       <Career data={projects} />
       <SideProjects data={sideProjects} />
+      <ScrollToTopButton />
     </div>
   );
 }
