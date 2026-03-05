@@ -34,6 +34,8 @@ export const skills: Skill[] = [
     { name: 'Oracle', level: 85, color: '#F80000', category: 'database' },
     { name: 'MySQL', level: 80, color: '#4479A1', category: 'database' },
     { name: 'MariaDB', level: 85, color: '#003545', category: 'database' },
+    { name: 'Tibero', level: 85, color: '#003545', category: 'database' },
+    { name: 'Cubrid', level: 85, color: '#003545', category: 'database' },
     { name: 'PL/SQL', level: 80, color: '#F80000', category: 'database' },
 
     // DevOps
@@ -75,19 +77,40 @@ export const certifications: Certification[] = [
 export const projects: Project[] = [
     {
         id: 'project-1',
+        title: '경찰청 통합유지관리',
+        period: '2025.11 - 2026',
+        description: '경찰청 시스템 DBMS 유지관리 및 개발DB 서버 구성',
+        role: 'Full-stack Developer',
+        techStack: ['Oracle', 'MariaDB', 'Tibero', 'MySql', 'Cubrid', 'Orange', 'DBeaver'],
+        links: {},
+        teamSize: 5,
+    },
+    {
+        id: 'project-2',
         title: '법인시설관리시스템 운영 유지관리 및 기능 고도화',
         period: '2025.05 - 2025.09',
         description:
             '서울시청 법인시설관리시스템의 안정적 운영과 기능 고도화를 담당한 프로젝트입니다. 좋은돌봄인증 업무 프로세스의 전체 흐름을 분석하고, 사용자 친화적인 인터페이스를 설계하여 업무 효율성을 높였습니다.',
         role: 'Full-stack Developer',
-        techStack: ['Java', 'Spring Framework', 'iBATIS', 'JSP', 'JSTL', 'jQuery', 'Oracle', 'JEUS8', 'Eclipse', 'DBeaver'],
+        techStack: [
+            'Java',
+            'Spring Framework',
+            'iBATIS',
+            'JSP',
+            'JSTL',
+            'jQuery',
+            'Oracle',
+            'JEUS8',
+            'Eclipse',
+            'DBeaver',
+        ],
         links: {
             demo: 'https://swfss.eseoul.go.kr/',
         },
         teamSize: 5,
     },
     {
-        id: 'project-2',
+        id: 'project-3',
         title: '바닥충격음 임시홈페이지 구축',
         period: '2024.05 - 2025.03',
         description:
@@ -113,7 +136,7 @@ export const projects: Project[] = [
         teamSize: 4,
     },
     {
-        id: 'project-3',
+        id: 'project-4',
         title: '3종 모바일 시스템 기능개선',
         period: '2024.07 - 2025.03',
         description:
@@ -139,7 +162,7 @@ export const projects: Project[] = [
         teamSize: 3,
     },
     {
-        id: 'project-4',
+        id: 'project-5',
         title: '소규모취약시설 안전관리 시스템 기능개선',
         period: '2023.10 - 2024.12',
         description:
@@ -166,7 +189,7 @@ export const projects: Project[] = [
         teamSize: 4,
     },
     {
-        id: 'project-5',
+        id: 'project-6',
         title: '정보시스템 유지관리',
         period: '2022.05 - 2024.02',
         description:
