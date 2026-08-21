@@ -40,12 +40,19 @@ export interface Project {
   teamSize?: number;
 }
 
+export interface ProjectSlide {
+  image?: string;
+  title: string;
+  description: string;
+}
+
 export interface SideProject {
   id: string;
   title: string;
   description: string;
   techStack: string[];
   image?: string;
+  slides?: ProjectSlide[];
   links?: {
     github?: string;
     demo?: string;

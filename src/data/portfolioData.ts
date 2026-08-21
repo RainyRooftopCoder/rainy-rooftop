@@ -1,5 +1,12 @@
 import type { PersonalInfo, Skill, Certification, Project, SideProject } from '../types';
 import profileImg from '../assets/profile_img.jpg';
+import wakestrideOverview from '../assets/wakestride/overview.png';
+import wakestrideMatrix from '../assets/wakestride/matrix.png';
+import wakestrideCalendar from '../assets/wakestride/calendar.png';
+import wakestrideWbs from '../assets/wakestride/wbs.png';
+import wakestrideDashboard from '../assets/wakestride/dashboard.png';
+import wakestrideWidget from '../assets/wakestride/widget.png';
+import wakestrideIcon from '../assets/wakestride/app-icon.png';
 
 export const personalInfo: PersonalInfo = {
     name: '윤승환',
@@ -221,6 +228,51 @@ export const projects: Project[] = [
 ];
 
 export const sideProjects: SideProject[] = [
+    {
+        id: 'wakestride',
+        title: 'WakeStride',
+        description:
+            '중요한 일과 급한 일을 아이젠하워 매트릭스로 가려내고, 캘린더·노트·프로젝트 보드가 하나로 이어지는 개인 생산성 앱. Windows/macOS 데스크톱과 Android에서 같은 데이터로 동작합니다.',
+        techStack: ['React', 'TypeScript', 'Tauri', 'Rust', 'Mantine'],
+        image: wakestrideIcon,
+        slides: [
+            {
+                image: wakestrideOverview,
+                title: '개요',
+                description:
+                    '일의 순서를 다시 정의하는 개인 생산성 앱. 중요한 일과 급한 일을 가려내고, 캘린더와 노트가 그 흐름을 그대로 이어갑니다. Windows/macOS 데스크톱, Android 지원(iOS 준비중).',
+            },
+            {
+                image: wakestrideMatrix,
+                title: '아이젠하워 매트릭스',
+                description: '중요도와 긴급도, 두 가지 기준으로 할 일을 네 영역에 자동으로 분류해 지금 해야 할 일을 선명하게 보여줍니다.',
+            },
+            {
+                image: wakestrideCalendar,
+                title: '캘린더',
+                description: '월간 그리드와 하루 일정을 한 화면에서 확인하고, 좌우로 넘겨 다음 달로 이동할 수 있습니다.',
+            },
+            {
+                image: wakestrideWbs,
+                title: '프로젝트 보드',
+                description: '노트 폴더가 그룹이 되고, 그룹 아래 일정, 일정 아래 할일로 이어지는 구조를 간트 차트로 시각화합니다.',
+            },
+            {
+                image: wakestrideDashboard,
+                title: '통계 대시보드',
+                description: '그룹별 진행률과 기한 준수율, 최근 사용량까지 숫자로 확인할 수 있는 통계 화면.',
+            },
+            {
+                image: wakestrideWidget,
+                title: '데스크톱 위젯',
+                description: '캘린더와 매트릭스를 바탕화면 위젯으로 띄워두고, 앱을 열지 않아도 오늘 할 일을 바로 확인합니다.',
+            },
+        ],
+        links: {
+            demo: 'https://rainyrooftopcoder.github.io/wakestride-Introduction/index.html',
+        },
+        type: 'personal',
+    },
     {
         id: 'side-1',
         title: '포트폴리오 빌더',
