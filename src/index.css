@@ -739,6 +739,7 @@ button {
 
 .modal-nav-btn {
     flex-shrink: 0;
+    align-self: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
