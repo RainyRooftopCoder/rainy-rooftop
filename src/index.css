@@ -682,6 +682,9 @@ button {
 .modal-header .project-link {
     width: 32px;
     height: 32px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
     font-size: 1rem;
 }
 
@@ -703,11 +706,15 @@ button {
 }
 
 .modal-slide-image {
+    display: block;
     width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    aspect-ratio: 1109 / 1354;
     border-radius: 12px;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: left top;
     background-color: var(--color-light);
-    max-height: 55vh;
 }
 
 .modal-slide-text {
@@ -1204,7 +1211,7 @@ button {
     }
 
     .modal-slide-image {
-        max-height: 40vh;
+        max-width: 280px;
     }
 
     .coming-soon-message h3 {
