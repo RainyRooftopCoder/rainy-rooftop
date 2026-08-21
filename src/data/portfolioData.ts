@@ -284,6 +284,7 @@ export const sideProjects: SideProject[] = [
             demo: 'https://portfolio-builder.vercel.app',
         },
         type: 'personal',
+        hidden: true,
     },
     {
         id: 'side-2',
@@ -296,6 +297,7 @@ export const sideProjects: SideProject[] = [
             demo: 'https://weather-notifier.netlify.app',
         },
         type: 'personal',
+        hidden: true,
     },
     {
         id: 'side-3',
@@ -307,6 +309,7 @@ export const sideProjects: SideProject[] = [
             demo: 'https://snippet-share.web.app',
         },
         type: 'team',
+        hidden: true,
     },
     {
         id: 'side-4',
@@ -318,5 +321,6 @@ export const sideProjects: SideProject[] = [
             demo: 'https://todo-manager.vercel.app',
         },
         type: 'personal',
+        hidden: true,
     },
 ];

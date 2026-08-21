@@ -13,9 +13,10 @@ const SideProjects = ({ data }: SideProjectsProps) => {
   const [activeProject, setActiveProject] = useState<SideProject | null>(null);
   const [slideIndex, setSlideIndex] = useState(0);
 
+  const visibleProjects = data.filter(project => !project.hidden);
   const filteredProjects = filter === 'all'
-    ? data
-    : data.filter(project => project.type === filter);
+    ? visibleProjects
+    : visibleProjects.filter(project => project.type === filter);
 
   const currentProject = filteredProjects[cardIndex] ?? null;
   const slides = activeProject?.slides && activeProject.slides.length > 0
@@ -232,7 +233,35 @@ const SideProjects = ({ data }: SideProjectsProps) => {
               </button>
 
               <div className="modal-header">
-                <h3>{activeProject.title}</h3>
+                <div className="modal-header-title-row">
+                  <h3>{activeProject.title}</h3>
+                  {activeProject.links && (
+                    <div className="project-links">
+                      {activeProject.links.github && (
+                        <a
+                          href={activeProject.links.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <FaGithub />
+                        </a>
+                      )}
+                      {activeProject.links.demo && (
+                        <a
+                          href={activeProject.links.demo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <FaExternalLinkAlt />
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
                 <div className="project-tech">
                   {activeProject.techStack.map((tech) => (
                     <span key={tech} className="tech-tag">
@@ -240,32 +269,6 @@ const SideProjects = ({ data }: SideProjectsProps) => {
                     </span>
                   ))}
                 </div>
-                {activeProject.links && (
-                  <div className="project-links">
-                    {activeProject.links.github && (
-                      <a
-                        href={activeProject.links.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-link"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <FaGithub />
-                      </a>
-                    )}
-                    {activeProject.links.demo && (
-                      <a
-                        href={activeProject.links.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-link"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        <FaExternalLinkAlt />
-                      </a>
-                    )}
-                  </div>
-                )}
               </div>
 
               <div className="modal-slide-stage">

@@ -58,4 +58,5 @@ export interface SideProject {
     demo?: string;
   };
   type: 'personal' | 'team';
+  hidden?: boolean;
 }

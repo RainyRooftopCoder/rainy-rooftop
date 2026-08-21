@@ -662,16 +662,27 @@ button {
     margin-bottom: 20px;
 }
 
+.modal-header-title-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
 .modal-header h3 {
     font-size: 1.6rem;
     color: var(--color-starbucks-green);
-    margin-bottom: 12px;
 }
 
 .modal-header .project-links {
     display: flex;
-    gap: 12px;
-    margin-top: 12px;
+    gap: 10px;
+}
+
+.modal-header .project-link {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
 }
 
 .modal-slide-stage {
