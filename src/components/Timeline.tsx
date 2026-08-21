@@ -39,6 +39,13 @@ const timelineData: TimelineEvent[] = [
         subtitle: 'SM사업부 과장 (5개월)',
         details: '2025.05 - 2025.09',
     },
+    {
+        id: 'free',
+        year: '2025',
+        title: '프리렌서',
+        subtitle: '통합유지관리 DBA',
+        details: '2025.11 -',
+    },
 ];
 
 const Timeline = () => {

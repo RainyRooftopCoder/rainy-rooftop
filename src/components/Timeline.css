@@ -47,7 +47,7 @@
 .timeline-item {
     position: relative;
     display: inline-block;
-    width: 25%;
+    width: 20%;
     text-align: center;
 }
 
@@ -59,7 +59,9 @@
     border-radius: 50%;
     margin: 0 auto 1rem;
     z-index: 2;
-    box-shadow: 0 0 0 4px #ffffff, 0 0 20px rgba(0, 112, 74, 0.5);
+    box-shadow:
+        0 0 0 4px #ffffff,
+        0 0 20px rgba(0, 112, 74, 0.5);
 }
 
 .timeline-content {

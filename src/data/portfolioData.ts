@@ -78,12 +78,12 @@ export const projects: Project[] = [
     {
         id: 'project-1',
         title: '경찰청 통합유지관리',
-        period: '2025.11 - 2026',
+        period: '2025.11 - 진행중',
         description: '경찰청 시스템 DBMS 유지관리 및 개발DB 서버 구성',
-        role: 'Full-stack Developer',
+        role: 'DBA',
         techStack: ['Oracle', 'MariaDB', 'Tibero', 'MySql', 'Cubrid', 'Orange', 'DBeaver'],
         links: {},
-        teamSize: 5,
+        teamSize: 2,
     },
     {
         id: 'project-2',
