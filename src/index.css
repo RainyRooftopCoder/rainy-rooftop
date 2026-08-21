@@ -708,7 +708,7 @@ button {
 .modal-slide-image {
     display: block;
     width: 100%;
-    max-width: 360px;
+    max-width: 540px;
     margin: 0 auto;
     aspect-ratio: 1109 / 1354;
     border-radius: 12px;
@@ -1211,7 +1211,7 @@ button {
     }
 
     .modal-slide-image {
-        max-width: 280px;
+        max-width: 420px;
     }
 
     .coming-soon-message h3 {
